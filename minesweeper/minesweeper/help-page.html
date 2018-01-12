@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title> Mine Sweeper Help </title>
+	<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="script-main.js"></script>
+	
+	<link rel="stylesheet" type = "text/css" href="style-main.css"/>
+</head>
+
+
+
+
+<body style="background-color: darkgrey">
+<script> 
+	$(document).ready(function(){
+		$('.test').bind("contextmenu", function(e){
+			$(this).toggleClass('flag');
+			return false;
+		});
+	});
+</script>
+
+	<p>Although its first appearance on a Windows machine was in 1980, MineSweeper, continues to confuse and intrigue players around the world.</p>
+	<p> The rules can certainly come off as daunting, but once you see how it all comes together, you'll wonder how you went so long without knowing it.
+	<br>
+	In brief, this tutorial will walk you through how to play MineSweeper and provide a couple tricks to get you defusing on the right foot.</p>
+		
+		<p>MineSweeper consists of a sea of tiles. Each tile hides a space containing one of 3 things: a number, a blank space, or a mine. <br>
+		If you click on a mine, the game is over!</p>  
+		<img src="Images/Help/minetut1.png" >
+	
+
+			<p><b>Number Spaces</b><br>
+			A number spaces denotes how many spaces adjacent to that one contain a mine. For the example below, the "1" means that one and only one of the 8 surrounding tiles is concealing a mine.</p>
+			<img src="Images/Help/minetut2.png">
+
+		
+			<p><b>Blank Spaces</b><br>
+			A blank space indicates that there are <i>no</i> mines adjacent to the given space. <br>Clicking a tile over a blank space not only reveals every adjacent blank space to that tile, but also every number space adjacent to the new blank spaces! (bear with me, you'll see what I mean!)<br>
+			This makes finding blank spaces invaluable!</p>
+		
+        <img src="Images/Help/minetut3.png"  height="150" width="170"">
+		
+			<p><b>Mine Spaces</b><br>
+			Mine spaces are scattered all over the playfield. The number in the top right indicates how many undiscovered mines are left in the field.<br> Flagging tiles you are convinced are mines decreases the counter.<br> To flag/unflag a mine simply <i>left-click</i> on a tile. Flagging a mine prevents the tile from being selected. <br>Try not to flag tiles that you can't be certain are mines! <br>
+			Try it out:
+			</p>
+			<button class="test" style='height: 26.5px; width:26.5px; pointer-events: auto; border: 3.5px outset darkgrey'></button>
+		
+		<p>
+		Now that you've mastered the basics, let's take a peak at a couple basic strategies.</p>
+		<p> Often you will see areas similar to the one pictured below. In other words, a space with a "1" that only has one covered tile adjacent to it. These spaces are definitely mines.</p>
+			<img src="Images/Help/minetut4.png" width="100" height="100"></li>
+			<p> Likewise if you have a space with a "2" in an arranged such as below. You can flag the tile right below it (marked with a superscript 2) aswell, as it is definitely a mine. </p><br> 
+			<i>Can you guess what the blank tile is?</i><br>
+			It is <b><i>not</i></b> a mine! </p>
+			<img src="Images\Help\minetut5.png" >
+			<p>The above rule can be applied to any number of cascading sequential mine blocks as seen below.</p>
+			
+			<img src="Images\Help\minetut6.png">
+			<br>
+			<p>Now that you have the gist of MineSweeper, go ahead and close the help window and start sweeping!</p>
+			
+		
+	
+</body>

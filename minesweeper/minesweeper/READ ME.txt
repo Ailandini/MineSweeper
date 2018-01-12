@@ -1,0 +1,12 @@
+Thank you for playing MineSweeper!
+
+Remember to extract all files from the zip file before 
+playing.
+
+In order to win, you must remove all non-mine tiles and 
+also flag all mine tiles.
+
+Enjoy! 
+
+All files (excepting images) are a product of 
+Ansel Landini
