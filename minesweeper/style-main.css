@@ -1,0 +1,151 @@
+body{
+	background-color: lightgrey;
+	margin: 0;
+	padding: 0;
+	margin-top: 1%;
+
+}
+
+	.helpWindow {
+		display: inline;
+		float: left;
+		position: absolute;
+		border: 1px solid red;
+		height: 520px;
+		width: 18%;
+		margin-left: 1%;
+		padding-left: 1%;
+		background-color: darkgrey;
+		border: 5px inset lightgrey;
+	}
+
+	.container {
+		display: flex;
+		float: center;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+
+		.score {
+			position: fixed;
+			display:flex;
+			justify-content: space-around;
+			flex-direction: row;
+			align-items: center;
+			margin-right: 5px;
+			width: 800px;
+			height: 100px;
+			border: 5px inset lightgrey;
+			background-color: darkgrey;
+
+		}
+
+			.mineTime {
+				background-color: black;
+				width: 125px;
+				height: 80px;
+			}
+
+			.restart {
+				border: 5px outset lightgrey;
+				width: 80px;
+				height: 80px;
+
+			}
+
+
+			.mineScore {
+				background-color: black;
+				margin-left: 25px;
+				width: 100px;
+				height: 80px;
+			}
+
+		.playfield {
+			position: fixed;
+			display:flex;
+			justify-content: center;
+			flex-direction: row;
+			align-items: center;
+			width: 800px;
+			height: 415px;
+			top: 130px;
+			text-align: center;
+		}
+
+			.board {
+				background-color: black;
+				position: fixed;
+				top: 125px;
+				width: 800px;
+				height: 415px;
+				background-color: darkgrey;
+				border: 5px inset lightgrey;	
+			}
+
+			.spaces {
+				position: relative;
+				display: flex;
+				align-self: flex-start;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				z-index: 5;
+			}
+				.onespace {
+					border: 1px inset black;
+					background-color: darkgrey;
+					margin-right: .17px;
+					margin-bottom: 1.15px;
+				}
+
+
+
+			.tiles {
+				position: absolute;
+				display: flex;
+				align-self: flex-start;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				z-index: 10;
+
+				pointer-events: none;
+			}
+
+				.onetile {
+					pointer-events: auto;
+					border: 3.5px outset lightgrey;
+					margin-right: .17px;
+					margin-bottom: 1.15px;
+				}
+
+					.flag {
+						background-image: url('Images/flag.png');
+					}
+
+
+		.EndGame {
+			position: absolute;
+			text-align: center;
+			z-index: 15;
+			font-size: 100px;
+			color: red;
+			padding-top: 100px;
+			width: 800px;
+			height: 265px;
+		}
+
+		img, .test, .close {
+			margin: auto;
+			display: block;
+		}
+
+		img {
+			width: 40%;
+			height: 40%;
+		}
+
+
